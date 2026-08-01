@@ -56,7 +56,7 @@ Stores detected port information:
 - Service_Name
 - Port_State
 
-Device_ID creates a relationship between scanned devices and their open ports.
+The **Device_ID** creates a relationship between scanned devices and their open ports.
 
 ## Installation & Usage
 
@@ -64,30 +64,46 @@ Device_ID creates a relationship between scanned devices and their open ports.
 
 ```bash
 nmap -oX scan_result.xml target_ip
-2. Run Python Parser
+```
+
+### 2. Run Python Parser
+
+```bash
 python3 parser.py
-3. Database Output
+```
 
-The parser automatically inserts extracted scan results into MariaDB tables:
+### 3. Database Output
 
-Scanned_Devices
-Open_Ports
-Project Screenshots
-Nmap Parser Execution
-<img src="./screenshots/nmap_parser_terminal_output.png" width="800">
-Scanned Devices Database
-<img src="./screenshots/mariadb_scanned_devices_table.png" width="800">
-Open Ports Database
-<img src="./screenshots/mariadb_open_ports_table.png" width="800">
-Skills Demonstrated
-Python Programming
-XML Data Processing
-Network Scanning
-Nmap Usage
-SQL Database Integration
-Linux Environment
-Network Security Fundamentals
+The parser automatically inserts extracted scan results into the following MariaDB tables:
 
-Author
+- Scanned_Devices
+- Open_Ports
 
-Saif Ali
+## Project Screenshots
+
+### Nmap Parser Execution
+
+![Parser Output](screenshots/nmap_parser_terminal_output.png)
+
+### Scanned Devices Database
+
+![Scanned Devices](screenshots/mariadb_scanned_devices_table.png)
+
+### Open Ports Database
+
+![Open Ports](screenshots/mariadb_open_ports_table.png)
+
+## Skills Demonstrated
+
+- Python Programming
+- XML Data Processing
+- Network Scanning
+- Nmap
+- MariaDB / MySQL
+- SQL Database Integration
+- Linux Environment
+- Git & GitHub
+
+## Author
+
+**Saif Ali**
