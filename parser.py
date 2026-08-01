@@ -123,8 +123,3 @@ for host in root.findall("host"):
 # ==========================================
 # 4. CLOSE DATABASE
 # ==========================================
-
-cursor.close()
-conn.close()
-
-print("Database Connection Closed")
