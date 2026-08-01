@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Thu Jul 30 15:03:57 2026 as: /usr/lib/nmap/nmap -&#45;privileged -p 8000 -oX scan_result.xml 127.0.0.1 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -p 8000 -oX scan_result.xml 127.0.0.1" start="1785438237" startstr="Thu Jul 30 15:03:57 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="8000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1785438237" endtime="1785438237"><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="127.0.0.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="localhost" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="8000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="2810" rttvar="5000" to="100000"/>
+</host>
+<runstats><finished time="1785438237" timestr="Thu Jul 30 15:03:57 2026" summary="Nmap done at Thu Jul 30 15:03:57 2026; 1 IP address (1 host up) scanned in 0.09 seconds" elapsed="0.09" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
