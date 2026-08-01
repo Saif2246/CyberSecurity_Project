@@ -74,13 +74,12 @@ Scanned_Devices
 Open_Ports
 Project Screenshots
 Nmap Parser Execution
-
+<img src="./screenshots/nmap_parser_terminal_output.png" width="800">
 Scanned Devices Database
-
+<img src="./screenshots/mariadb_scanned_devices_table.png" width="800">
 Open Ports Database
-
+<img src="./screenshots/mariadb_open_ports_table.png" width="800">
 Skills Demonstrated
-
 Python Programming
 XML Data Processing
 Network Scanning
