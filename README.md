@@ -1,21 +1,21 @@
 # Nmap XML Parser v1.1
 
-A Python-based Nmap XML Parser that analyzes Nmap XML scan reports and stores network scan information into a MariaDB relational database.
+A Python-based Nmap XML Parser that analyzes Nmap scan reports and stores network scan information into a MariaDB relational database.
 
 ## Project Overview
 
-This project automates the process of reading Nmap XML output files and extracting important network information such as:
+This project automates the process of reading Nmap XML output files and extracting important network information including:
 
 - IP Addresses
 - Open Ports
 - Port States
 - Running Services
 
-The extracted information is stored in a structured relational database for analysis.
+The extracted information is stored in a structured MariaDB database for analysis and reporting.
 
 ## Project Workflow
 
-Nmap Scan → XML Report → Python Parser → MariaDB Database
+Nmap Scan → XML Report → Python Parser → MariaDB Database → GitHub Documentation
 
 ## Features
 
@@ -25,7 +25,7 @@ Nmap Scan → XML Report → Python Parser → MariaDB Database
 - Stores scanned devices in database
 - Stores open ports with service details
 - Uses relational database design with foreign key relationships
-- Provides structured security scan data storage
+- Provides organized network scan data storage
 
 ## Technologies Used
 
@@ -34,20 +34,21 @@ Nmap Scan → XML Report → Python Parser → MariaDB Database
 - Nmap
 - MariaDB / MySQL
 - Kali Linux
+- Linux Terminal
 - Git & GitHub
 
 ## Database Structure
 
 ### Scanned_Devices Table
 
-Stores discovered devices:
+Stores discovered network devices:
 
 - Device_ID
 - IP_Address
 
 ### Open_Ports Table
 
-Stores port information:
+Stores detected port information:
 
 - Port_ID
 - Device_ID
@@ -55,32 +56,39 @@ Stores port information:
 - Service_Name
 - Port_State
 
-The Device_ID creates a relationship between scanned devices and their open ports.
+Device_ID creates a relationship between scanned devices and their open ports.
 
 ## Installation & Usage
 
-1. Run an Nmap scan and generate XML output:
+### 1. Generate Nmap XML Scan
+
+```bash
 nmap -oX scan_result.xml target_ip
-
-
-2. Run the Python parser:
-
-
+2. Run Python Parser
 python3 parser.py
+3. Database Storage
 
+The parser automatically inserts extracted scan results into MariaDB tables:
 
-3. The scan results will be stored in the MariaDB database.
+Scanned_Devices
+Open_Ports
+Project Screenshots
+Nmap Parser Execution
 
-## Skills Demonstrated
+Scanned Devices Database
 
-- Python Programming
-- Network Scanning
-- XML Data Processing
-- Database Integration
-- SQL Queries
-- Linux Environment
-- Cybersecurity Fundamentals
+Open Ports Database
 
-## Author
+Skills Demonstrated
+
+Python Programming
+XML Data Processing
+Network Scanning
+Nmap Usage
+SQL Database Integration
+Linux Environment
+Network Security Fundamentals
+
+Author
 
 Saif Ali
